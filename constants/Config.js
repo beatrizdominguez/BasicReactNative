@@ -1,6 +1,3 @@
-const appName = 'Naugthy tattoos'
+const appName = 'The app name';
 
-export {
-  appName,
-}
-
+export {appName};
