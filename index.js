@@ -24,4 +24,4 @@ class Main extends Component {
   }
 }
 
-AppRegistry.registerComponent(appName, () => SplashScreen);
+AppRegistry.registerComponent(appName, () => Main);

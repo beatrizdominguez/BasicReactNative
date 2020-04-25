@@ -6,6 +6,12 @@ import {
   Button,
   TouchableOpacity,
   StatusBar,
+  SafeAreaView,
+  ScrollView,
+  Header,
+  ReloadInstructions,
+  DebugInstructions,
+  LearnMoreLinks,
 } from 'react-native';
 
 import Colors from './../../constants/Colors';
@@ -40,74 +46,81 @@ export default function HomeScreen({navigation}) {
 
   return (
     <>
-      <StatusBar backgroundColor={Colors.primary} barStyle="light-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
+      <View>
+        <Text>home</Text>
+      </View>
     </>
-
-    // <>
-    //   <StatusBar backgroundColor={Colors.primary} barStyle="light-content" />
-    //   <View style={styles.container}>
-    //     <View style={styles.diceContainer}>
-    //       <View style={styles.item}>
-    //         <Dice>
-    //           <Text style={styles.text}>{action}</Text>
-    //         </Dice>
-    //       </View>
-    //       <View style={styles.item}>
-    //         <Dice>
-    //           <Text style={styles.text}>{tattoo}</Text>
-    //         </Dice>
-    //       </View>
-    //     </View>
-    //     <View style={styles.buttonContainer}>
-    //       <Button
-    //         title="Roll the dice"
-    //         color={Colors.primary}
-    //         onPress={() => setLoopCount(DICE_ROLLS)}
-    //       />
-    //     </View>
-    //   </View>
-    // </>
   );
+  //   return (
+  //     <>
+  //       <StatusBar backgroundColor={Colors.primary} barStyle="light-content" />
+  //       <SafeAreaView>
+  //         <ScrollView
+  //           contentInsetAdjustmentBehavior="automatic"
+  //           style={styles.scrollView}>
+  //           <Header />
+  //           {global.HermesInternal == null ? null : (
+  //             <View style={styles.engine}>
+  //               <Text style={styles.footer}>Engine: Hermes</Text>
+  //             </View>
+  //           )}
+  //           <View style={styles.body}>
+  //             <View style={styles.sectionContainer}>
+  //               <Text style={styles.sectionTitle}>Step One</Text>
+  //               <Text style={styles.sectionDescription}>
+  //                 Edit <Text style={styles.highlight}>App.js</Text> to change this
+  //                 screen and then come back to see your edits.
+  //               </Text>
+  //             </View>
+  //             <View style={styles.sectionContainer}>
+  //               <Text style={styles.sectionTitle}>See Your Changes</Text>
+  //               <Text style={styles.sectionDescription}>
+  //                 <ReloadInstructions />
+  //               </Text>
+  //             </View>
+  //             <View style={styles.sectionContainer}>
+  //               <Text style={styles.sectionTitle}>Debug</Text>
+  //               <Text style={styles.sectionDescription}>
+  //                 <DebugInstructions />
+  //               </Text>
+  //             </View>
+  //             <View style={styles.sectionContainer}>
+  //               <Text style={styles.sectionTitle}>Learn More</Text>
+  //               <Text style={styles.sectionDescription}>
+  //                 Read the docs to discover what to do next:
+  //               </Text>
+  //             </View>
+  //             <LearnMoreLinks />
+  //           </View>
+  //         </ScrollView>
+  //       </SafeAreaView>
+  //     </>
+
+  //   // <>
+  //   //   <StatusBar backgroundColor={Colors.primary} barStyle="light-content" />
+  //   //   <View style={styles.container}>
+  //   //     <View style={styles.diceContainer}>
+  //   //       <View style={styles.item}>
+  //   //         <Dice>
+  //   //           <Text style={styles.text}>{action}</Text>
+  //   //         </Dice>
+  //   //       </View>
+  //   //       <View style={styles.item}>
+  //   //         <Dice>
+  //   //           <Text style={styles.text}>{tattoo}</Text>
+  //   //         </Dice>
+  //   //       </View>
+  //   //     </View>
+  //   //     <View style={styles.buttonContainer}>
+  //   //       <Button
+  //   //         title="Roll the dice"
+  //   //         color={Colors.primary}
+  //   //         onPress={() => setLoopCount(DICE_ROLLS)}
+  //   //       />
+  //   //     </View>
+  //   //   </View>
+  //   // </>
+  //   );
 }
 
 const styles = StyleSheet.create({
