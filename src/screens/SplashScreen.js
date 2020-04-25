@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, Image, StatusBar, SafeAreaView} from 'react-native';
 
-import {appName} from './../constants/Config';
+import {appName} from './../../constants/Config';
 
-import Colors from './../constants/Colors';
-import Layout from './../constants/Layout';
+import Colors from './../../constants/Colors';
+import Layout from './../../constants/Layout';
 
 // const IMAGENAME = require('./../res/icon.png')
 

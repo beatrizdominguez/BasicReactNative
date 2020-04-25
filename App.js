@@ -4,8 +4,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Colors from './constants/Colors';
 
-import HomeScreen from './screens/HomeScreen';
-import SettingsScreen from './screens/SettingsScreen';
+import HomeScreen from './src/screens/HomeScreen';
+import SettingsScreen from './src/screens/SettingsScreen';
 import {appName} from './constants/Config';
 
 const Stack = createStackNavigator();
