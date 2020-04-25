@@ -1,3 +1,3 @@
-const appName = 'The app name';
+const appName = 'The cool app name ;)';
 
 export {appName};

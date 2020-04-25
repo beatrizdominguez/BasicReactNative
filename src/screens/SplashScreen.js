@@ -2,24 +2,20 @@ import React from 'react';
 import {StyleSheet, Text, Image, StatusBar, SafeAreaView} from 'react-native';
 
 import {appName} from './../../constants/Config';
-
 import Colors from './../../constants/Colors';
-import Layout from './../../constants/Layout';
 
-// const IMAGENAME = require('./../res/icon.png')
+import Spacing from './../components/Spacing';
+
+const IMAGENAME = require('./../../res/icon.png');
 
 export default function HomeScreen(props) {
   return (
     <>
       <StatusBar hidden={true} />
       <SafeAreaView style={styles.container}>
-        {/* <Image
-          style={styles.logo}
-          source={IMAGENAME}
-        /> */}
+        <Image style={styles.logo} source={IMAGENAME} />
+        <Spacing />
         <Text style={styles.appName}>{appName}</Text>
-        <Text style={styles.appName}>{Layout.width}</Text>
-        <Text style={styles.appName}>{Layout.height}</Text>
       </SafeAreaView>
     </>
   );
